@@ -39,9 +39,9 @@ Fritzing-Dateien unterliegen der
 [CC-BY-SA](http://creativecommons.org/licenses/by-sa/3.0/deed.de).
 
 Die Verwertungsrechte der Fotos liegen beim Franzis Verlag. Eine Verwendung in
-nicht-kommerziellen Webseiten der zu Pressezwecken ist genehmigt, solange der
+nicht-kommerziellen Webseiten oder zu Pressezwecken ist genehmigt, solange der
 Copyright-Vermerk "Foto: Mattias Schlenker für Franzis Verlag, 
-www.arduino-hausautomation.de" oder "Foto: Mattias Schlenker für Franzis
+http://www.bananapi-buch.de/" oder "Foto: Mattias Schlenker für Franzis
 Verlag, Hausautomation mit Arduino" erhalten bleibt.
 
 ## Kontakt
