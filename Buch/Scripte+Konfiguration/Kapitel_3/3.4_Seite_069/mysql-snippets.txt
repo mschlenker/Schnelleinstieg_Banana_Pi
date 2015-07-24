@@ -1,0 +1,15 @@
+# Datenbank erstellen (in der Shell)
+mysqladmin -p -u root create dbname
+
+# Datenbank-Prompt oeffnen (in der Shell)
+mysql -p -u root mysql
+
+# Nutzer mit Rechten an einer DB erstellen:
+GRANT ALL PRIVILEGES ON dbname.* TO 'nutzer'@'%' IDENTIFIED BY 'passwort';
+
+# Wie oben, aber weniger Rechte:
+GRANT INSERT, SELECT, UPDATE ON dbname.* TO 'nutzer2'@'%' IDENTIFIED BY 'passwort';
+
+# Rechte neu einlesen und Datenbank verlassen
+FLUSH PRIVILEGES;
+quit
