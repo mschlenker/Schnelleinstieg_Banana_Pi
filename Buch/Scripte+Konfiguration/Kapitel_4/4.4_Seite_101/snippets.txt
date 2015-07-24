@@ -1,0 +1,12 @@
+
+echo 23 > /sys/class/gpio/export
+echo in > /sys/class/gpio/gpio23/direction
+
+# Lesen Sie den Pin nun einmal aus, wenn der Schalter offen ist:
+
+cat /sys/class/gpio/gpio23/value 
+
+# Angezeigt wird 0. Und nocheinmal bei gedrücktem Schalter, angezeigt wird nun 1. 
+# Natürlich sollten Sie auch hier hinterher wieder aufräumen:
+
+echo 23  > /sys/class/gpio/unexport

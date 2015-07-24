@@ -1,0 +1,6 @@
+modprobe -v ov5640
+modprobe -v sun4i_csi0
+
+# Wird das zweite Modul nicht gefunden, verwenden Sie stattdessen:
+
+modprobe -v sun4i_csi

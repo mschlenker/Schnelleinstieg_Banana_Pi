@@ -1,0 +1,8 @@
+cd /usr/src
+git clone https://github.com/tvheadend/tvheadend
+cd tvheadend 
+./configure --prefix=/usr
+make -j3
+
+# Nach erfolgreichen Build: Starten:
+./build.linux/tvheadend -C

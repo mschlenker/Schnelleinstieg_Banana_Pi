@@ -1,0 +1,11 @@
+echo 23  > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio23/direction
+
+# Nun können wir die verbundene LED an- und wieder ausschalten:
+
+echo 1 > /sys/class/gpio/gpio23/value
+echo 0 > /sys/class/gpio/gpio23/value
+
+# Um den Pin 23 für andere Programme freizugeben wird der Export wieder aufgehoben:
+
+echo 23  > /sys/class/gpio/unexport

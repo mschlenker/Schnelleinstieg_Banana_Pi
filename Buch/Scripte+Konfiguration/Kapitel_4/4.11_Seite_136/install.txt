@@ -1,0 +1,7 @@
+cd /usr/src
+git clone https://github.com/mschlenker/Adafruit_Python_GPIO
+git clone https://github.com/adafruit/Adafruit_Nokia_LCD
+cd Adafruit_Python_GPIO
+python setup.py install
+cd ../Adafruit_Nokia_LCD
+python setup.py install

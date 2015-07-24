@@ -1,0 +1,4 @@
+
+cd /lib/firmware
+wget https://raw.github.com/torvalds/linux/master/Documentation/dvb/get_dvb_firmware 
+perl get_dvb_firmware it9135

@@ -1,0 +1,16 @@
+apt-get install build-essential python2.7 python-setuptools python-dev git sudo
+
+# Beim bananapro bitte "bananapro" statt "bananapi" als Branch verwenden!
+cd /usr/src
+git clone https://github.com/LeMaker/WiringBP.git -b bananapi
+git clone https://github.com/LeMaker/RPi.GPIO_BP -b bananapi
+
+cd /usr/src/WiringBP
+bash build
+
+cd /usr/src/RPi.GPIO_BP
+python setup.py config
+python setup.py build
+python setup.py install
+
+gpio readall

@@ -1,0 +1,14 @@
+fswebcam --save /tmp/picam.jpg -d /dev/video0 -r 1280x960
+
+# Falls Sie am Banana Pi einen grafischen Desktop installiert haben, 
+# können Sie auch den Mplayer benutzen, um einen Livestream der Kamera 
+# anzuschauen:
+
+mplayer tv:// -tv driver=v4l2:input=1:width=352:height=288:device=/dev/video0
+
+# Hat alles geklappt, sorgen Sie dafür, dass die benötigten Treiber
+# beim Systemstart geladen werden, dazu wird für jeden Treiber eine
+# Zeile an die Datei /etc/modules angehängt:
+
+echo ov5640 >> /etc/modules
+echo sun4i_csi0 >> /etc/modules
