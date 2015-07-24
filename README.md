@@ -31,7 +31,7 @@ Verzeichnisstruktur
  
 ## Lizenzen
 
-Alle Sketches sind unter GPL v2 lizenziert. Andere Lizenzen sind auf Anfrage
+Alle Scripte, Quellcodes und Arduino-Sketches sind unter GPL v2 lizenziert. Andere Lizenzen sind auf Anfrage
 möglich, wenn abgeklärt wurde, dass verwendete Bibliotheken diese Lizenz 
 zulassen. 
 
